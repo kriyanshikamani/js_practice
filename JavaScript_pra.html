@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="click" onclick="alert('click this button');">Click me</button> -->
+
+
+  
+    <script>
+        // alert("Click me");
+
+
+        // if-else example
+    //     let a=5;
+    // let b=10;
+    // if(a<b)
+    // {
+    //     console.log("b is bigger than a");
+    // }
+    // else{
+    //     console.log("a is bigger than b");
+    // }
+ 
+
+// Switch Example
+    // let a=2;
+    // switch(a){
+    //     case 1:
+    //         console.log("a is 1");
+    //         break;
+    //     case 2:
+    //         console.log("a is 2");
+    //         break;
+    //     case 3:
+    //         console.log("a is 3");
+    //         break;
+    //     case 4:
+    //         console.log("a is 4");
+    //         break;
+    //     case 5:
+    //         console.log("a is 5");
+    //         break;
+    //     case 6:
+    //         console.log("a is 6");
+    //         break;
+    //     default: console.log("a is unknown");
+    // }
+
+
+    // prompt example
+    // let a=prompt("Enter number:");
+    // if(a%5===0)
+    // {
+    //     console.log(a/5," is devide by 5");
+    // }
+    // else{
+    //     console.log(a," is not devide by 5");
+    // }
+
+
+
+    // for of loop example:array and string mate use thy
+    // let a="Kriyanshi";
+    // for(let i of a)
+    // {
+    //     console.log(i);
+    // }
+
+    // for in loop example:object mate use thy
+    // let student= {
+    //     name:"Kriyanshi",
+    //     age:22,
+    //     gender:"Female",
+    //     CGPA:9.7
+    // }
+    // for(let key in student)
+    // {
+    //     console.log(student[key]);
+    // }
+
+
+        //exmple of template literals
+    // let  obj={
+    //     item:"Pen",
+    //     price:50
+    // }
+    // let output=`this is the obj in that item is${obj.item} and price ${obj.price}`;
+    // console.log(output);
+
+
+
+// let str1="  kriyanshi KAMANi ";
+// let str2=" Bsc IT completed successfully"
+// console.log(str1.length);
+// console.log(str1.toUpperCase());
+// console.log(str1.toLowerCase());
+// console.log(str1.trim()); //remove spaces from the starting and ending characters
+// console.log(str1.concat(str2)); //concate two strings
+// console.log(str1.slice(4,9)); //return the part of the string
+// console.log(str1.replace("k","j")); //replace the  string
+// console.log(str1.charAt(6));//return the character ofthe position
+
+
+// let name=prompt("Enter your Full name:");
+
+// let username="@"+name+ name.length;
+// console.log(username);
+
+
+//Example of an array -for loop
+// sum=0;
+// let arr= [23,45,67,76,43,34,12,22,2,3,30];
+// for (let i=0; i<arr.length; i++)
+// {
+//     console.log(arr[i]);
+//     sum+=arr[i];
+
+// }
+// console.log(sum);
+
+//Exmaple of an array with -for of loop
+// for(let i of arr)
+// {
+//     console.log(i);
+// }
+
+//push function and pop function(which is delete from the last)
+// let items=["apple", "orange", "banana", "kiwi", "grapes", "chiku"];
+
+// items.push("mango");
+// console.log(items);
+// items.pop();
+// console.log(items);
+
+
+//Arrow function
+//const fun_name= () =>{}
+// const multiplication = (a,b)=>
+// {
+//     console.log( a*b);
+// }
+// multiplication(3,5);
+
+
+//Vowals count exmaples(AEIOU)
+// function countVowals(str)
+// {
+//     let count=0;
+//     for(const char of str){
+       
+//         console.log(char);
+//         if(char=='a' || char=='i' || char=='e' || char=='o' || char=='u') {
+//             count++;
+//         }
+        
+//     }
+//     console.log(count);
+    
+// }
+// countVowals("aeiou");
+
+//for each loop in array using  callback function
+//callback function passed as an argument to another function
+// let arr= ["mansi","janki","riya"];
+// arr.forEach((element ,idx,arr)=> {
+//     console.log(element.toUpperCase(),idx+1,arr);
+// });
+
+//square
+// let arr=[1,2,3,4,5,6];
+// arr.forEach((element)=>
+// {
+//     console.log(element*element);
+// });
+
+
+//filter array
+// let arr=[95,78,90,65,98,34,45]
+
+// const topper=arr.filter((val)=>{
+//     return val>90;
+// });
+// console.log(topper);
+
+
+// DOM in Insert element practice
+
+// let element=document.createElement("button");
+// element.innerHTML="Click me";
+// element.style.color="white";
+// element.style.backgroundColor="red";
+// document.querySelector("body").prepend(element);
+
+</script>
+    
+</body>
+</html>

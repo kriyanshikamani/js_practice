@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Head in Script tag -->
+    <!-- <script> 
+    function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello I am Kriyanshi kamani";
+        }
+    </script> -->
+</head>
+<body>
+    
+    <!-- <p id='demo'>Hello I am Kriyanshi </p> -->
+   
+   
+    <!-- <button id='btn' onclick="myFunction();" >CLick here</button> -->
+
+    <!-- For print some another text -->
+    <!-- <button id="btn" onClick='document.getElementById("demo").innerHTML="Hello I M Kriyanshi Kamani"'>Click here</button> -->
+    
+    <!-- for font size -->
+    <!-- <button id="btn" onClick='document.getElementById("demo").style.fontSize="35px"'>Click Here</button> -->
+   
+    <!-- window.print() method  -->
+    <!-- <button id="btn" onClick='window.print()'>Click Here</button> -->
+
+    <!-- <p id='demo'> </p> -->
+     
+<button id="myBtn">Try it</button>
+<p id="demo">Hello kriyanshiii</p>
+
+
+    <!-- <button id="btn" onClick="document.getElementById('demo').innerHTML = Date()">CLick</button> -->
+    <script>
+    //   let text="Kriyanshi";
+    //   text+="Kamani";
+    //     document.getElementById("demo").innerHTML=text;
+
+
+        // Array Example
+        // const arr=["banana", "chiku","pinapple","grapes","mango"];  
+        // document.getElementById("demo").innerHTML=arr[4];
+
+       //object example
+        // const obj={firstname:"Kriyanshi",
+        //     lastname:"Kamani",
+        //     age:22,
+        //     country:"India"
+        // }
+        // document.getElementById("demo").innerHTML="Firstname:"+obj.firstname +" LastName:" + obj.lastname +" Age:" + obj.age+" Country:" + obj.country;
+
+       //Functional example
+        // function myFunction(p1,p2) {
+        //     return p1*p2;
+        // }
+        // document.getElementById("demo").innerHTML=myFunction(4,5);
+        // function myFunction(f) {
+        //     return (5/2)+(f-23);
+        // }
+        // document.getElementById("demo").innerHTML=myFunction(50);
+
+
+        //Create an object-Object Examle
+        // const obj=new Object();
+        // obj.firstname="Kriyanshi";
+        // obj.lastname="Kamani";
+        // obj.age=22;
+        // obj.country="India";
+        // document.getElementById("demo").innerHTML=obj.firstname +" " + obj.lastname +" " + obj.age+" " + obj.country;
+
+        //exmaple like for that obj[firstname]
+//         const details={
+//             name:"kriyanshi",
+//             age:22,
+//             gender:"Female",
+//             CGPA:9.78
+//         }
+//         details.city="Jamnagar";   // add the new property
+      
+//         delete details.CGPA; //delete the property
+//    document.getElementById("demo").innerHTML=details["name"] +" " + details["age"] +" " + details["gender"] +" "+details["city"] +" " + details["CGPA"];
+   
+
+
+//Nested Object
+// const details ={
+//     name:"kriyanshi",
+//     age:22,
+//     gender:"Female",
+//     Marks:{
+//         android:78,
+//         asp:80,
+//         php:85,
+//     },
+//     CGPA:9.78,
+// }
+
+// document.getElementById("demo").innerHTML=details["name"]+" " +details["Marks"]["android"]+" "+details["CGPA"];
+
+
+//create a new object and add method
+// const details ={
+// firstname:"kriyanshi",
+//     lastname:"kamani",
+//     age:22,
+    
+// }
+// details.fullname=function()
+// {
+//     return (this.firstname +" " + this.lastname).toUpperCase();
+// }
+// document.getElementById("demo").innerHTML= details.fullname()+" "+details.age;
+
+//Create a constructor function
+// function createConstructor(name, age,city,state) {
+// this.name = name;
+// this.age = age;
+// this.city=city;
+// this.state=state;
+// }
+// const obj=new createConstructor("Kriyanshi", 22, "Jamnagar", "India");
+// const obj2=new createConstructor("karan",21,"surat", "India");
+// document.getElementById("demo").innerHTML=obj.name+" "+obj.age+" "+obj2.city+" "+obj2.state;
+
+
+//Interpolation exmple
+// let name="kriyanshi";
+// let age=22;
+// const text=`hello ${name} and your age is ${age}`;
+// document.getElementById("demo").innerHTML=text;
+
+
+//array Example
+// const arr=new Array(10,5,68,56,54);
+// const ary=[10,5,4,5,25,27];
+// document.getElementById("demo").innerHTML=arr;
+//  document.getElementById("demo").innerHTML=ary;
+
+
+//nested array Example
+// let x=""
+// const details={
+//     name:"kriyanshi",
+//     age:22,
+//     gender:"Female",
+//     cars: [
+//     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+//     {name:"BMW", models:["320", "X3", "X5"]},
+//     {name:"Fiat", models:["500", "Panda"]}
+// ],
+//     CGPA:9.78,
+// }
+
+// for(const i in details.cars) {
+//     x+=details.cars[i].name+"<br>"
+// for(const j in  details.cars[i].models) {
+//     x+=details.cars[i].models[j]+"<br>";
+// }
+// }
+// document.getElementById("demo").innerHTML=x;
+
+
+//for each array exmaple
+// const username= ["karan","kashyap","kriyanshi"];
+// let content = ""; 
+// username.forEach(function(value){
+//     content+=value+"<br>";
+// });
+// document.getElementById("demo").innerHTML=content;
+
+//map  array example
+// const number=[2,4,5,6,7,8,9,10,11,12,13,14];
+// const op=number.map(function(value){
+//    return value*2;
+// });
+
+// document.getElementById("demo").innerHTML=op;
+
+
+//Filter array exmple
+// const age=[45,43,12,7,8,9,34,22,12,25,24];
+// const checkage= age.filter(function(value)
+// {
+//     return value>=20;
+// });
+// document.getElementById("demo").innerHTML=checkage;
+
+
+//reduce method example
+// const number=[5,45,874,54,56,4,1,12,23,24,31];
+// const sum=number.reduce((total,value)=>{
+//     return value+total;
+// });
+// document.getElementById("demo").innerHTML=sum;
+
+
+//some and every array method example-some ma amuk value j condtion jode check thy atle true aave and every ma bdhi value condition ma sachi hot to j true aave othrwise false aave othrwise
+// const number=[12,34,56,19,18,20];
+
+// const checkage =number.some((value)=>{
+//     return value>=17
+// });
+// document.getElementById("demo").innerHTML=checkage;
+
+// const number=[20,22,56,19,18,20];
+
+// const checkage =number.every((value)=>{
+//     return value>=17
+// });
+// document.getElementById("demo").innerHTML=checkage;
+
+//Array.From example
+// const arr=Array.from("Kriyanshi");
+// document.getElementById("demo").innerHTML=arr;
+
+//Array.keys example-e Iterator object with the keys of the array
+// const number=[20,22,56,19,18,20];
+// const arr_key=number.keys();
+// let text='';
+// for(let i of arr_key) {
+//     text+=i;
+// }
+// document.getElementById("demo").innerHTML=text;
+
+//Array entries() key-value pairs ma aape che
+// const name=["kriyanshi","kamani","Jamnagar"];
+// const f=name.entries();
+
+// for(let x of f) {
+//     document.getElementById("demo").innerHTML+=x;
+// }
+
+
+//Array  with() method -update the element  in array withot alterning original  array
+// const name=["kriyanshi","kamani","Jamnagar"];
+// const chnagedata=name.with(1,"patel");
+
+// for(let x of chnagedata)
+// {
+//     document.getElementById("demo").innerHTML+=x +" ";
+// }
+
+//spread" operator spreads elements of iterable objects
+// const p1=["jan","feb","mar","apl"];
+// const p2=["maj","jun","jul","aug"]
+// const p3=["sep","oct","nov","dec"];
+
+// const year=[...p1,...p2,...p3];
+
+
+//Example of Date Functions with get method
+// const d=new Date();
+// document.getElementById("demo").innerHTML=year;
+// document.getElementById("demo").innerHTML=d.getFullYear();
+// document.getElementById("demo").innerHTML=d.getMonth()+1;
+// document.getElementById("demo").innerHTML=d.getDate();
+// document.getElementById("demo").innerHTML=d.getDay();
+// document.getElementById("demo").innerHTML=d.getHours();
+// document.getElementById("demo").innerHTML=d.getMinutes();
+// document.getElementById("demo").innerHTML=d.getSeconds();
+// document.getElementById("demo").innerHTML=d.getMilliseconds();
+
+
+//example of the set method in Date
+// const date = new Date();
+// date.setFullYear("2009");
+// date.setMonth(2);
+// date.setDate(2);
+// date.setHours(12);
+// date.setMinutes(22);
+// date.setSeconds(30);
+// date.setMilliseconds(340);
+// document.getElementById("demo").innerHTML=date;
+
+
+//Math Function
+// document.getElementById("demo").innerHTML=Math.round(4.6);
+// document.getElementById("demo").innerHTML=Math.ceil(5.2);
+// document.getElementById("demo").innerHTML=Math.floor(3.7);
+// document.getElementById("demo").innerHTML=Math.trunc(4.9);
+// document.getElementById("demo").innerHTML=Math.sign(-4);
+// document.getElementById("demo").innerHTML=Math.max(12,5,89,45,3,2,30,31);
+
+//set example
+// const letters = new Set(["a","b","c"]);
+// document.getElementById("demo").innerHTML = "The set has " + letters.size ;
+
+//create set and add values
+// const letters = new Set();
+
+// letters.add("kriyanshi");
+// letters.add(2);
+// letters.add("kriyanshi");
+// letters.add(true);
+
+// let text="";
+// for(let x of letters) {
+//     text+=x+"<br>";
+// }
+// document.getElementById("demo").innerHTML = "The set has: <br>-----------<br>" +text +"length of set:"+letters.size;
+
+//map example
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// let text="";
+// for(let x of fruits) {
+//     text+=x+"<br>";
+// }
+// document.getElementById("demo").innerHTML = "The map has: <br>-----------<br>" +text +"length of map:"+fruits.size;
+
+//regular expression example
+// const name="kriyanshi kamani";
+// let n=name.search(/kamani/i);
+// document.getElementById("demo").innerHTML=n;
+
+// const name="kriyanshi kamani";
+// let n=name.replace(/kamani/i,"patel");
+// document.getElementById("demo").innerHTML=n;
+
+// "use strict";
+// let eval = 3.14; 
+
+
+//callback function
+
+// function myFunction1(print_data) {
+//     document.getElementById("demo").innerHTML=print_data;
+// }
+
+// function myFunction2(num1,num2,callback) {
+//     let result=num1+num2;
+//     callback(result);
+// }
+// myFunction2(5,10,myFunction1);
+
+//setTimeout function
+//  setTimeout(myfunction,5000);
+
+//  function myfunction(){
+//     document.getElementById("demo").innerHTML="hiee Kriyanshi";
+//  }
+
+
+//DOM Example----
+// var example=document.getElementById("demo");
+// example.style.backgroundColor="pink";
+
+
+var x = document.getElementById("myBtn");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML += "Moused over!<br>";
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML += "Clicked!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>";
+}
+
+
+
+
+ 
+
+
+
+
+
+
+</script>
+   
+
+</body>
+</html>
