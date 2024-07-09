@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hello {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 2px solid black;
+      }
+      .hello-ji {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>hello kriyanshi</p>
+    <p>Good morning</p>
+    <p>Good evening</p>
+    <p class="intro">hello kriyanshi</p>
+    <p class="intro">Good morning</p>
+    
+
+    <div class="hello">Hello</div>
+
+    <button type="button" class="btn">Click me</button><br />
+    <input type="name" placeholder="enter name" id="name" /><br />
+    <a href="http://www.google.com" target="_blank" id="google">google</a><br /><br />
+
+    <!-- before -->
+    <ul id="list">
+      <!-- prepend -->
+      <li>tea</li>
+      <li>coffee</li>
+      <li>coco</li>
+      <li>milk</li>
+      <!-- append -->
+    </ul>
+    <!-- after -->
+  </body>
+  <script src="JS/jquery.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //Element selector
+      // $("p").click(function()
+      // {
+      //     alert("hello world");
+      // });
+      //for selerc first element then use p:first
+      // $("p:first").click(function(){
+      //     console.log("first element is clicked");
+      // });
+
+      //Mouse events
+      // $("p").dblclick(function(){
+      //     alert("double clicked");
+      // });
+      // $("p").mouseover(function(){
+      //     $(this).css("background-color", "yellow");
+      // });
+      // $("p").mouseleave(function(){
+      //     $(this).css("background-color", "lightblue");
+      // });
+
+      //ak j element upr multiple events fire krvi hoy tyre on() function use thy
+      //   $("p").on({})
+
+      //       $("p").on({
+      //     click: function () {
+      //         $(this).css("background-color", "lightgreen");
+      //     },
+      //     dblclick: function () {
+      //         $(this).css("background-color", "lightblue");
+      //     },
+      //     mouseover: function () {
+      //         $(this).css("background-color", "pink");
+      //     }
+      // });
+
+      //call back function
+      //   $('p').click(function () {
+      //     $('p').hide(3000, function(){
+      //         alert('All paragraphs have been hidden');
+      //     });
+      // });
+
+      //chaining function for the mutliple effect
+      // $("div").css("font-size", "25px").fadeOut(5000).fadeIn(5000);
+
+      //Manipulating HTML elements
+      //text
+      // $(".btn").click(function () {
+      //   let txt= $("p").text();
+      //     alert(txt);
+      // });
+
+      //html- html  to get the value
+      // $(".btn").click(function () {
+      //   let tag_html= $("p").html();
+      //   alert(tag_html);
+      // });
+
+      //html() -to set the value
+      // $(".btn").click(function () {
+      // $("p").html("<h2>have a goood day!</h2>");
+      // });
+
+      //val() for the return value
+      // $(".btn").click(function () {
+      //   $("#name").val("kriyanshi Patel");
+      // });
+
+      // $(".btn").click(function () {
+      //  let value= $("#google").attr("href")
+      //  alert(value);
+      // });
+
+      //Example of before-after and prepend-append functions
+      // $("#list").before("<div>This is List</div>");
+      // $('#list').prepend("<li>black tea</li>");
+      // $('#list').append("<li>lemon tea</li>");
+      // $('#list').append("<div>This is end of the list</div>");
+
+      //addClass() method for the adding class  from the element
+      // $(".btn").click(function () {
+      //   $(".hello").addClass("hello-ji");
+      // });
+
+      //removeClass() method for the remove class  from the element
+      // $(".btn").click(function () {
+      //   $(".hello").removeClass("hello-ji");
+      // });
+
+      //toggleClass() method for the toggle class
+      // $(".btn").click(function () {
+      //   $(".hello").toggleClass("hello-ji");
+      // });
+
+      //css() property for the designning
+      // $(".btn").click(function () {
+      //   $(".hello").css({
+      //     "background-color": "yellow",
+      //      "border": "3px solid red",
+      //     "font-size": "20px"
+      // });
+      // });
+
+      //filter method in first function
+      // $("p").first().css("background-color", "orange");
+
+      //filter in eq function
+      // $("p").eq(1).css({ "background-color": "darkblue", color: "white" });
+
+      //filter method in last function
+      // $("p").last().css("background-color", "lightgreen");
+
+
+      //filter function 
+      // $("p").filter(".intro").css({"background-color": "pink" });
+      $("p").not(".intro").css({"background-color": "purple","color":"white" });
+    });
+  </script>
+</html>
