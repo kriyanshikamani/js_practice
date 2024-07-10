@@ -40,6 +40,11 @@
       <!-- append -->
     </ul>
     <!-- after -->
+
+
+
+    <p class="ex-data">you age is:
+    <span style="color: red;"></span>and you are <span style="color: blue;"> old</span> </p>
   </body>
   <script src="JS/jquery.js"></script>
 
@@ -161,7 +166,13 @@
 
       //filter function 
       // $("p").filter(".intro").css({"background-color": "pink" });
-      $("p").not(".intro").css({"background-color": "purple","color":"white" });
+      // $("p").not(".intro").css({"background-color": "purple","color":"white" });
+
+
+      //data method
+      $(".ex-data").data("test",{first: 22, last:"22 old"});
+      $("span").first().text($(".ex-data").data("test").first);
+      $("span").last().text($(".ex-data").data("test").last);
     });
   </script>
 </html>
