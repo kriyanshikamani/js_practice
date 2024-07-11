@@ -14,6 +14,13 @@
       .hello-ji {
         border-radius: 50%;
       }
+  div {
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    background: green;
+  }
     </style>
   </head>
   <body>
@@ -45,6 +52,16 @@
 
     <p class="ex-data">you age is:
     <span style="color: red;"></span>and you are <span style="color: blue;"> old</span> </p>
+    <input type="button" value="Run" >
+    <p id="event-type">input-type</p>
+
+
+    <p id="box-scroll" style="height: 300px; width: 500px; background-color: yellowgreen; ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, voluptatum hic! Tempora, deserunt ullam pariatur modi totam voluptatem nesciunt vero quasi placeat perspiciatis sapiente facere suscipit et id, culpa eligendi?
+    Qui reiciendis ratione culpa ab, earum non nemo quos labore pariatur accusantium, architecto ducimus accusamus facere at, nostrum facilis quibusdam commodi error odio officia cupiditate cumque esse. Animi, ipsum consequatur.
+    Nobis, atque voluptate quidem nihil distinctio eius necessitatibus assumenda officia dolorem qui. Ullam, non numquam earum reprehenderit cupiditate officia, rerum aliquid possimus itaque laboriosam officiis porro provident natus. Temporibus, eveniet?
+    Suscipit rerum neque dolore possimus! Veniam tenetur dicta excepturi quae officiis enim doloremque? Illum consequatur reprehenderit quidem esse iusto nobis tempora eligendi quo voluptatibus eaque, ducimus recusandae necessitatibus nostrum architecto!
+    Veniam vitae delectus vero, dolore possimus odit placeat sint pariatur facilis voluptatem quasi praesentium accusamus cumque voluptas nulla consequatur. Nesciunt deleniti ratione perferendis tempore impedit culpa placeat adipisci voluptates dolores?</p>
+<div></div>
   </body>
   <script src="JS/jquery.js"></script>
 
@@ -170,9 +187,56 @@
 
 
       //data method
-      $(".ex-data").data("test",{first: 22, last:"22 old"});
-      $("span").first().text($(".ex-data").data("test").first);
-      $("span").last().text($(".ex-data").data("test").last);
+      // $(".ex-data").data("test",{first: 22, last:"22 old"});
+      // $("span").first().text($(".ex-data").data("test").first);
+      // $("span").last().text($(".ex-data").data("test").last);
+    
+//       jQuery.fx.interval = 100;
+// $( "input" ).on( "click", function() {
+//   $( "div" ).toggle( 3000 );
+//     });
+
+//resize event 
+      // $(window).resize(function() {
+      //  $("p" ).text("window height=" + $(window).height() +"width=" + $(window).width());
+      // });
+  
+//scroll event
+      // $(window).scroll(function() {
+      //   $("#box-scroll" ).css({overflow: "scroll",color:"red",fontSize:"25px"});
+      // });
+
+      //currrent target element 
+//       $( "p" ).on( "click", function( event ) {
+//   alert( event.currentTarget === this ); // true
+// });
+
+   
+
+
+    //delegate ane live both are same but live is better than delegate
+    //on and bind () both are same ana thi mutliple events bnay saki e
+    //off () is used for remove eventhandler
+    //unbind () is used for remove priviously  attached eventhandler from the event
+
+
+    //mouse ni co-ordinate janva mate x-coordinate mate pageX and y-coordinate mate pageY.
+    $('p').on( "click", function( event )  {
+      console.log(`Mouse coordinates: ${event.pageX}, ${event.pageY}`);
     });
+ 
+    //event.type  property check krva mate k kai event triggered thy chhe
+      //event.which property spefic check kri ne aape jem k mousedown thyu hoy to ema specific aape like left click 1,right click 3,center click 2 kyu click thyu chhe 
+    $("#event-type").on( "click dblclick mouseover mouseout", function( event ) {
+      console.log(`Event type: ${event.type}and Event which:  ${event.which}`);
+    });
+  }); 
+
+//event.target che e specify kre jo h1 upr click kri to h1 return kre evi rite bdha element mate use thy
+$("#box-scroll").on("click", function(){
+  console.log(`Event taret ${event.target}`);
+});
+
+
   </script>
 </html>
