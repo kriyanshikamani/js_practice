@@ -6,11 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>Hello before,after,insertBefore,insertAfter method</p>
+    <h2 id="insert">Add the before and after in insertbefore & insertAfter</h2>
+    <br/>
+    <button type="submit"id="Before">Before</button>
+    <button type="submit"id="after">after</button>
+    <button type="submit"id="insertBefore">insertBefore</button>
+    <button type="submit"id="insertAfter">insertAfter</button>
+
+
+
 </body>
 <script src="JS/jquery.js"></script>
 <script>
   $(document).ready(function () {
+    $("#Before").click(function () {
+        $("p").before("<h4>This is before exmple</h4>");
+    });
+    $("#after").click(function () {
+        $("p").after("<h4>This is after exmple</h4>");
+    });
+    $("#insertBefore").click(function () {
+        $("p").insertBefore("#insert");
+    });
+    $("#insertAfter").click(function () {
+        $("p").insertAfter("#insert");
+    });
     
 });
   </script>

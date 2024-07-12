@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello this in Remove,Empty and Detach Example</p>
+    <p id="p1">remove this</p>
+    <p id="p2">empty this</p>
+    <p id="p3">detach this</p>
+
+
+    <button type="submit"id="remove">remove</button>
+    <button type="submit"id="empty">empty</button>
+    <button type="submit"id="detach">detach</button>
+
+</body>
+<script src="JS/jquery.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#remove").click(function(){
+        $("#p1").remove();
+    });
+    $("#empty").click(function(){
+        $("#p2").empty();
+    });
+    $("#detach").click(function(){
+        $("#p3").detach();
+    });
+  });
+  </script>
+</html>
