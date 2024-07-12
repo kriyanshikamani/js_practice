@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>jquery replaceWith and replaceAll</h3>
+    <p id="p1">Click here for the chnage the content......</p>
+    <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique temporibus sint animi impedit saepe repudiandae, autem dolores debitis.</p>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora in earum amet deserunt quibusdam alias laudantium maiores laborum. Iste tenetur voluptatibus quo quidem in ullam?</p>
+
+    
+</body>
+<script src="JS/jquery.js"></script>
+<script>
+  $(document).ready(function () {
+
+    // $("#p1").on("click", function(){
+    // $(this).replaceWith("<h3>Kriyanshi Kamani</h3>");
+    // });
+    $("#p1").on("click", function(){
+      $("<h3>hello ji..Kriyanshi Kamani</h3>").replaceAll("p").css("color", "red");
+    });
+
+});
+  </script>
+</html>
