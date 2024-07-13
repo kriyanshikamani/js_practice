@@ -12,9 +12,17 @@
     <p id="p3">detach this</p>
 
 
+
     <button type="submit"id="remove">remove</button>
     <button type="submit"id="empty">empty</button>
     <button type="submit"id="detach">detach</button>
+    <br/><br/>
+
+    <div><b>select one ...</b><br/>This is an exmple for each() method which work like Loop</div>
+    <ul><li>apple</li>
+        <li>banana</li>
+        <li>kiwi</li>
+        <li>grapes</li></ul>
 
 </body>
 <script src="JS/jquery.js"></script>
@@ -29,6 +37,16 @@
     $("#detach").click(function(){
         $("#p3").detach();
     });
+
+
+    //each() function..
+    $("ul li").each(function(){
+        $(this).click(function(){
+            alert($(this).text());
+        });
+    });
+
   });
+
   </script>
 </html>
