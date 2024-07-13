@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1
+    <p title="mytitle">exmple of the attribute</p>
+    <div title="mytitle">div paragraph</div> -->
+
+    <!-- 2 and 3
+    <p title="mytitle">exmple of the attribute</p>
+    <div title="this mytitle">div paragraph</div> 
+     <div title="this my title">div paragraph</div> -->
+
+    <!-- 4
+    <p title="mytitle">this is the delimited by space exmaple </p>
+    <div title="helllo ji mytitle">this is the delimited by space exmaple in attr</div> 
+    <p title="helllo ji my-title">this is the delimited by space exmaple in attr</p>  -->
+
+    <!-- 5
+    <p title="mytitle-hello">hello this sis the |= sign exmple</p>
+    <p title="mytitle">hello morning</p>
+    <p title="mytitlemorning">hello evening</p> -->
+
+    <!-- 6
+    <p title="divmy">^ this check starting from the string</p>
+    <p title="my">good morning</p>
+    <p title="divmy -exmple"> thwefjk efvjing</p> -->
+
+    
+    <p title="div my">$ this check ending from the string</p>
+    <p title="my-div">good morning</p>
+    <p title="divmy -divmy"> thwefjk efvjing</p>
+    <div></div>
+    <p></p>
+
+
+  </body>
+  <script src="JS/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      //1
+      // $('[title="mytitle"]').css({ color: 'red' });
+      //2
+      // $('[title!="mytitle"]').css({ color: 'green' });
+      //3
+      // $('[title*="mytitle"]').css({ color: 'blue' });
+      //4
+      // $('[title~="mytitle"]').css({ color: 'blue' });
+      //5
+      // $('[title|="mytitle"]').css({ color: 'pink' });
+      //6
+      // $('[title^="divmy"]').css({ color: 'blue' });
+      //7 
+       $('[title$="my"]').css({ color: 'blue' });
+
+
+    });
+  </script>
+</html>

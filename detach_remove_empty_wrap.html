@@ -18,11 +18,15 @@
     <button type="submit"id="detach">detach</button>
     <br/><br/>
 
-    <div><b>select one ...</b><br/>This is an exmple for each() method which work like Loop</div>
+    <div><b>select one ...in li</b><br/>This is an exmple for each() method which work like Loop</div>
+    <br/>
+
     <ul><li>apple</li>
         <li>banana</li>
         <li>kiwi</li>
         <li>grapes</li></ul>
+        <button type="submit" id="find-length" >Find the length of the li</button>
+
 
 </body>
 <script src="JS/jquery.js"></script>
@@ -45,6 +49,12 @@
             alert($(this).text());
         });
     });
+    
+//length function
+
+$("#find-length").click(function(){
+    alert($("li").length);
+});
 
   });
 
