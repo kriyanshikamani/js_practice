@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" placeholder="Enter name:" enabled><br/>
+    Email:<input type="text" placeholder="Enter email:" value="kriyanshi@gmail.com" disabled><br/>
+    Gender:<input type="radio" name="Gender" id="male" value="male" checked="checked">Male
+    <input type="radio" name="Gender" id="female" value="female">Female
+<br/>
+   Hobby: <input type="checkbox" name="dance" id="dance" >dance
+    <input type="checkbox" name="music" id="music">music
+    <input type="checkbox" name="art" id="art">art
+<br/>
+   City: <select name="city">
+        <option value="delhi" selected>Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="chennai">Chennai</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="kolkata">Kolkata</option>
+    </select>
+    <br/>
+    upload File: <input type="file" ><br/><br/><br/>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+
+
+
+</body>
+<script src="JS/jquery.js"></script>
+<script>
+  $(document).ready(function () {
+    // $(":input").css("background-color", "pink");
+    // $(":enabled").css("background-color", "yellow");
+    $(":disabled").css("background-color", "aqua");
+    $(":checked").wrap("<span style='background-color:red'</span>");
+        
+    });
+  </script>
+</html>

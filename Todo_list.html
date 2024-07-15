@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <style>
+     .show-data .line {
+        text-decoration: line-through;
+        background-color: rgb(46, 210, 46);
+        transition: 2s;
+      }
+      
+    </style>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do-name">TO DO list</div>
+      <hr />
+      <div><input type="text" class="enter-data" placeholder="Enter your TODO.." /></div>
+        <div class="show-data"></div>
+    </div>
+  </body>
+
+  <script src="/JS/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+       $("input").change(function () {
+        var data = $(this).val();
+        $(".show-data").append("<div><div class='single-data'>" + data + "  <i class='fa fa-check'></i> <i class='fa fa-trash'></i></div>");
+        $(this).val("");
+
+       
+       $(".show-data").on("click",'.fa-trash',function () {
+        $(this).parent('div').fadeOut("slow").remove();
+      })
+      $(".show-data").on("click", '.fa-check', function () {
+    $(this).parent('div').toggleClass("line");
+  
+});
+
+
+     
+      
+ 
+       });
+   
+    });
+  </script>
+</html>
